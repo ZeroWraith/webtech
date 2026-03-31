@@ -1,0 +1,105 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #aaaaaa;
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #333;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.symbol {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.company {
+    font-size: 0.9em;
+    color: #888888;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.change {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Dynamic Classes */
+.up {
+    border-top: 4px solid #4CAF50;
+}
+.up .price, .up .change {
+    color: #4CAF50;
+}
+.up .change {
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.down {
+    border-top: 4px solid #F44336;
+}
+.down .price, .down .change {
+    color: #F44336;
+}
+.down .change {
+    background-color: rgba(244, 67, 54, 0.1);
+}
+
+.neutral {
+    border-top: 4px solid #aaaaaa;
+}
+.neutral .price, .neutral .change {
+    color: #aaaaaa;
+}
