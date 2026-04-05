@@ -8,6 +8,7 @@ A lightweight, purely native Live Stock Market Dashboard built with HTML, CSS, J
 - **Dynamic Simulation:** A backend PHP script periodically updates stock values inside the MySQL database to simulate a live moving market (prices fluctuate up and down randomly).
 - **Responsive UI:** A clean, dark-mode CSS Grid layout visually displays prices.
 - **Visual Status Indicators:** Cards dynamically turn green when a stock rises and red when a stock falls, complete with arrow indicators.
+- **Interactive Stock Graphs:** Click on any stock card to view a graph of its price trends.
 - **Zero Dependencies:** Written entirely in Vanilla JS, Raw CSS, and native PHP `mysqli`.
 
 ## 📂 Project Structure
