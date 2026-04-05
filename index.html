@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live Stock Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,6 +16,21 @@
             <p>Loading market data...</p>
         </div>
     </div>
+
+    <!-- Modal for Stock Details -->
+    <div id="stock-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-symbol"></h2>
+            <p id="modal-company"></p>
+            <h3 id="modal-price"></h3>
+            <p id="modal-change"></p>
+            <div class="chart-container" style="position: relative; height:40vh; width:100%">
+                <canvas id="stockChart"></canvas>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
